@@ -4,8 +4,9 @@ services:
   qdrant:
     platform: linux/amd64
     image: qdrant/qdrant
+#    command: bash
     volumes:
-      - './qdrant_storage:/qdrant/storage:z'
+      - "./qdrant_storage:/qdrant/storage:z"
     ports:
-      - '6333:6333'
-      - '6334:6334'
+      - "6333:6333"
+      - "6334:6334"
